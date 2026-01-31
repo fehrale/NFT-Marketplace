@@ -1,0 +1,82 @@
+:root {
+    --background-color-dark: #2B2B2B;
+    --text-color-light: #FFFFFF;
+    --background-color-filled: #A259FF;
+    --font-base: 16px;
+    --font-h5: 22px;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color-dark);
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    /* если через width, то будет скрол */
+    max-width: 1050px;
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.header__descktop-menu {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.header__item {
+    padding: 12px 20px;
+}
+
+
+.header__link {
+    color: var(--text-color-light);
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.header__link:hover {
+    transform: scale(0.95);
+}
+
+.button {
+    border-radius: 20px;
+    color: var(--text-color-light);
+    padding-inline: 50px;
+    font-weight: 600;
+    display: flex;
+    column-gap: 12px;
+}
+
+.button_filled {
+    background-color: var(--background-color-filled);
+}
+
+
+.button_secondary {
+    padding-block: 20.5px;
+    font-size: var(--font-base);
+}
