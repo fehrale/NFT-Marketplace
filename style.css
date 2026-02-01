@@ -42,6 +42,10 @@ body {
     border: 1px solid red;
 }
 
+.section-padding {
+    padding-block: 80px;
+}
+
 a {
     text-decoration: none;
 }
@@ -55,6 +59,34 @@ header {
     justify-content: space-between;
     padding: 20px 50px;
     align-items: center;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading-h3 {
+    font-size: var(--font-h3);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-sm);
+}
+
+.heading-h5 {
+    font-size: var(--font-h5);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-lg);
+
+}
+
+.heading-h3-color-light,
+.heading-h5-color-light {
+    color: var(--color-light);
+}
+
+.font-number {
+    font-family: "Space Mono", monospace;
 }
 
 .header__descktop-menu {
@@ -107,7 +139,6 @@ header {
     justify-content: space-between;
 }
 
-
 .hero__text {
     display: flex;
     flex-direction: column;
@@ -159,4 +190,68 @@ header {
 .hero__label {
     line-height: var(--line-height-xxl);
     font-size: 23.99px;
+}
+
+.headline__subhead {
+    font-size: var(--font-h5);
+    color: var(--color-light);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-xxl);
+}
+
+.trending-collection__collection {
+    display: flex;
+    /* когда нужно заполнить весь контенер, то используем  justify-content */
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.trending-collection__collection {
+    border: 1px solid red;
+}
+
+.photo-radius {
+    border-radius: 20px;
+}
+
+.trending-collection-additional-photos {
+    display: flex;
+    gap: 15px;
+}
+
+.trending-collection__number {
+    width: 100px;
+    height: 100px;
+    color: var(--color-light);
+    background-color: var(--color-filled);
+    font-size: var(--font-h5);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-collection_primary-photo {
+    margin-bottom: 15px;
+}
+
+.artist-photos {
+    border-radius: 100px;
+}
+
+.artist-name {
+    font-size: var(--font-base);
+    line-height: var(--line-height-lg);
+    color: var(--color-light);
+}
+
+.artists-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.trending-collection__info {
+    margin-top: 15px;
 }
