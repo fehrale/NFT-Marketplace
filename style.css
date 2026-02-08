@@ -319,3 +319,74 @@ header {
     color: var(--color-caption);
     line-height: 30px;
 }
+
+.categories__cards-wrapper {
+    margin-top: 60px;
+}
+
+.categories__card {
+    background-color: var(--color-secondary);
+    overflow: hidden;
+}
+
+.categories__photo-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.categories__photo {
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    filter: blur(15px);
+}
+
+.categories__name {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+}
+
+.categories__card:nth-child(1) .categories__photo {
+    background-image: url(img/sea.png);
+}
+
+.categories__card:nth-child(2) .categories__photo {
+    background-image: url(img/banan.png);
+}
+
+.categories__card:nth-child(3) .categories__photo {
+    background-image: url(img/music.png);
+}
+
+.categories__card:nth-child(4) .categories__photo {
+    background-image: url(img/grandpa.png);
+}
+
+.categories__card:nth-child(5) .categories__photo {
+    background-image: url(img/cloud.png);
+}
+
+.categories__card:nth-child(6) .categories__photo {
+    background-image: url(img/key.png);
+}
+
+.categories__card:nth-child(7) .categories__photo {
+    background-image: url(img/ball.png);
+}
+
+.categories__card:nth-child(8) .categories__photo {
+    background-image: url(img/city.png);
+}
+
+.categories__photo-wrapper:after {
+    content: "";
+    background-image: url(img/PaintBrush.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
