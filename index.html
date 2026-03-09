@@ -18,13 +18,30 @@
 <body>
     <header>
         <a href="https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples"
-            class="logo"><img src="img/logo.png" alt="Logotip"></a>
+            class="logo"><img src="img/logo.png" class="logo__image" alt="Logotip"></a>
         <nav class="header__nav">
             <ul class="header__descktop-menu">
                 <li class="header__item"><a href="#" class="header__link scale">Marketplace</a></li>
                 <li class="header__item"><a href="#" class="header__link scale">Rankings</a></li>
                 <li class="header__item"><a href="#" class="header__link scale">Connect a wallet</a></li>
                 <li class="header__item">
+                    <!-- если подразумевается переход на другую страницу, то делаем через ссылку -->
+                    <a href="#" class="button button_filled button_secondary scale">
+                        <img src="img/User.png" alt="Registration">
+                        <span class="button__text">Sign Up</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" class="header__nav-mobile-btn">
+
+        <nav class="header__nav-mobile">
+            <ul class="header__mobile-menu">
+                <li class="header__item"><a href="#" class="header__link scale">Marketplace</a></li>
+                <li class="header__item"><a href="#" class="header__link scale">Rankings</a></li>
+                <li class="header__item"><a href="#" class="header__link scale">Connect a wallet</a></li>
+                <li class="header__item header__mobile-signup-item">
                     <!-- если подразумевается переход на другую страницу, то делаем через ссылку -->
                     <a href="#" class="button button_filled button_secondary scale">
                         <img src="img/User.png" alt="Registration">
